@@ -1,5 +1,7 @@
 require("dotenv").config();
 require("module-alias/register");
+const express = require("express");
+const app = express();
 
 // register extenders
 require("@helpers/extenders/Message");
@@ -44,4 +46,14 @@ process.on("unhandledRejection", (err) => client.logger.error(`Unhandled excepti
 
   // start the client
   await client.login(process.env.BOT_TOKEN);
+
+  // Express server setup
+  const PORT = process.env.PORT || 3000;
+  app.get('/', (req, res) => {
+    res.send('Bot is running!');
+  });
+
+  app.listen(PORT, () => {
+    client.logger.log(`Server is running on port ${PORT}`);
+  });
 })();
