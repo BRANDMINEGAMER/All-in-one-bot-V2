@@ -36,7 +36,7 @@ module.exports = {
   },
 
   DASHBOARD: {
-    enabled: false, // enable or disable dashboard
+    enabled: true, // enable or disable dashboard
     baseURL: "http://localhost:8080", // base url
     failureURL: "http://localhost:8080", // failure redirect url
     port: "8080", // port to run the bot on
@@ -51,7 +51,7 @@ module.exports = {
   },
 
   MUSIC: {
-    ENABLED: false,
+    ENABLED: true,
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
     DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
