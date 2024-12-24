@@ -59,11 +59,11 @@ module.exports = {
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
       {
-        host: "lava.godzillaa.com",
-        port: 25101,
-        password: "dsc.gg/gdz",
+        host: "lavalink.alfari.id",
+        port: 443,
+        password: "catfein",
         id: "Music",
-        secure: false,
+        secure: true,
       },
     ],
   },
